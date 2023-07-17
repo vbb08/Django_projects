@@ -48,6 +48,8 @@ INSTALLED_APPS = [
 
     # Extensions - installed with pip3 / requirements.txt
     'django_extensions',
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
