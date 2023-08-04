@@ -34,7 +34,7 @@ class ResultsView(generic.DetailView):
 
 
 def owner(request):
-    return HttpResponse("Hello, world. eae25100 is the polls owner.")
+    return HttpResponse("Hello, world. eae25100 10f5fbb1 is the polls owner.")
 
 
 def vote(request, question_id):
