@@ -27,11 +27,14 @@ Various subfolders corresponding to their 'app name':
 
 ## Setup Instructions
 
-To set up the project, go into your virtual environment if needed, and follow the steps below:
+To set up the project, go into your virtual environment, and follow the steps below:
 
     git clone https://github.com/vbb08/django_projects.git
+    pip install -r requirements4.txt
+    pip install 'django_extensions'
+    pip install mysqlclient==1.4.6
     cd django_projects
-    pip3 install -r requirements.txt
+    python manage.py makemigrations
     python manage.py migrate
     python manage.py createsuperuser
     python manage.py runscript gview_load
@@ -46,6 +49,8 @@ applications by going into the folder and starting the server:
     python manage.py runserver
 
 And visit `http://localhost:8000`.
+
+Note: be sure MySQL is installed.
 
 ### Running on PythonAnywhere
 Once you have checked out the code under `django_projects`, and
@@ -68,6 +73,15 @@ Use this as your `WGSI configuration file`:
     from django.contrib.staticfiles.handlers import StaticFilesHandler
     application = StaticFilesHandler(get_wsgi_application())
 
+
+Open a bash:
+
+    cd django_projects/mysite
+    python manage.py check
+
+Reload the Web tab and visit `http:--your-account--/pythonanywhere.com`.
+
 You can edit these files and settings in the Web tab to switch between
  various projects on PythonAnywhere.  Make sure to reload under the Web tab after
 every file or configuration change.
+
