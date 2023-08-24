@@ -1,16 +1,25 @@
 
 {% extends "base_bootstrap.html" %}
 {% block content %}
-<h1>Welcome {{ settings.APP_NAME }}</h1>
-<p>Choose an APP:</p>
+<h1>Welcome!{{ settings.APP_NAME }}</h1>
 
-<ul>
+<p>Choose an APP</p>
+
 <li><a href="/polls">A Polls Application</a></li>
 <li><a href="/autos">Autos CRUD</a></li>
 <li><a href="/cats">Cats CRUD</a></li>
 <li><a href="/ads">Ads</a></li>
 <li><a href="/hello">Views number</a></li>
-</ul>
+
+
+
+<p></p>
+<p>This project is the result of some Django courses, part of the Django specialization:</p>
+<ol>
+<li><a href="https://www.coursera.org/learn/django-database-web-apps/home/info">Web Applications Technologies and Django</a></li>
+<li><a href="https://www.coursera.org/learn/django-build-web-apps/home/info">Building Web Applications in Django</a></li>
+<li><a href="https://www.coursera.org/learn/django-features-libraries/home/info">Django Features and Libraries</a></li>
+</ol>
 {% endblock content %}
 
 
